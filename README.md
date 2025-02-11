@@ -26,12 +26,12 @@ docker-compose down
 -------------------------
 Database schema
 
-Column	    Type	Constraints	    Description
-user_id	    INT	    PRIMARY KEY	    Unique user identifier
-name	    TEXT	NOT NULL	    Full name
-email	    TEXT	NOT NULL	    User's email address
-signup_date	DATE	NOT NULL	    Date (YYYY-MM-DD) when the user signed up
-domain	    TEXT	NOT NULL	    Extracted email domain
+Column	        Type	Constraints	    Description
+user_id	        INT	    PRIMARY KEY	    Unique user identifier
+name	        TEXT	NOT NULL	    Full name
+email	        TEXT	NOT NULL	    User's email address
+signup_date	    DATE	NOT NULL	    Date (YYYY-MM-DD) when the user signed up
+domain	        TEXT	NOT NULL	    Extracted email domain
 
 Schema creation script
 CREATE TABLE IF NOT EXISTS users_transformed (
